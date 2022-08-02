@@ -6,11 +6,13 @@ public class PlayerDataTransmitter : MonoBehaviour
 {
     private PlayerInputController _playerInputController;
     private PlayerMovementController _playerMovementController;
+    private PlayerCollisionController _playerCollisionController;
 
     private void Awake()
     {
         _playerInputController = GetComponent<PlayerInputController>();
         _playerMovementController = GetComponent<PlayerMovementController>();
+        _playerCollisionController = GetComponent<PlayerCollisionController>();
     }
 
     public float GetPlayerHorizontalMovementAxis()
@@ -40,5 +42,15 @@ public class PlayerDataTransmitter : MonoBehaviour
     public void SetPlayerVerticalSpeed(float speed)
     {
         _playerMovementController.VerticalSpeed = speed;
+    }
+
+    public int GetTotalCoinCount()
+    {
+        return _playerCollisionController.TotalCoinCount;
+    }
+    
+    public int GetCoinCount()
+    {
+        return _playerCollisionController.CoinCount;
     }
 }
