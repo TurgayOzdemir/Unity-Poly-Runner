@@ -646,6 +646,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2020775894223947439, guid: 80049189f317eae48ac463af2d5bf786, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80049189f317eae48ac463af2d5bf786, type: 3}
 --- !u!1 &155459981
@@ -1587,6 +1591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2020775894223947439, guid: 80049189f317eae48ac463af2d5bf786, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80049189f317eae48ac463af2d5bf786, type: 3}
 --- !u!1001 &558101294
@@ -1599,10 +1607,6 @@ PrefabInstance:
     - target: {fileID: 4697521571752477129, guid: 039b6099c735a0c4ebd9161a5a6012f7, type: 3}
       propertyPath: m_Name
       value: Hazard_Saw (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697521571752477129, guid: 039b6099c735a0c4ebd9161a5a6012f7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366921141149162355, guid: 039b6099c735a0c4ebd9161a5a6012f7, type: 3}
       propertyPath: m_RootOrder
@@ -3391,6 +3395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2020775894223947439, guid: 80049189f317eae48ac463af2d5bf786, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80049189f317eae48ac463af2d5bf786, type: 3}
 --- !u!1 &973657743
@@ -3852,10 +3860,6 @@ PrefabInstance:
     - target: {fileID: 4697521571752477129, guid: 039b6099c735a0c4ebd9161a5a6012f7, type: 3}
       propertyPath: m_Name
       value: Hazard_Saw (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4697521571752477129, guid: 039b6099c735a0c4ebd9161a5a6012f7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366921141149162355, guid: 039b6099c735a0c4ebd9161a5a6012f7, type: 3}
       propertyPath: m_RootOrder
@@ -6967,10 +6971,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hazard_Saw
       objectReference: {fileID: 0}
-    - target: {fileID: 4697521571752477129, guid: 039b6099c735a0c4ebd9161a5a6012f7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5366921141149162355, guid: 039b6099c735a0c4ebd9161a5a6012f7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7267,6 +7267,10 @@ PrefabInstance:
     - target: {fileID: 2020775894223947439, guid: 80049189f317eae48ac463af2d5bf786, type: 3}
       propertyPath: m_Name
       value: Spikes 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2020775894223947439, guid: 80049189f317eae48ac463af2d5bf786, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80049189f317eae48ac463af2d5bf786, type: 3}

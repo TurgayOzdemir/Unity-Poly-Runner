@@ -141,7 +141,7 @@ public class UIController : MonoBehaviour
     public void NextLevelButtonOnClick()
     {
         PlayerPrefs.SetInt("LEVEL", _currentLevel + 1);
-        if (PlayerPrefs.GetInt("LEVEL") > 4)
+        if (PlayerPrefs.GetInt("LEVEL") > 6)
         {
             PlayerPrefs.SetInt("LEVEL", 1);
         }

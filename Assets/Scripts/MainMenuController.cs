@@ -65,10 +65,12 @@ public class MainMenuController : MonoBehaviour
     public void level5ButtonOnClick()
     {
         SceneManager.LoadScene("Level5");
+        PlayerPrefs.SetInt("LEVEL", 5);
     }
 
     public void level6ButtonOnClick()
     {
         SceneManager.LoadScene("Level6");
+        PlayerPrefs.SetInt("LEVEL", 6);
     }
 }
