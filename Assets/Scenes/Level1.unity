@@ -2926,7 +2926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 1.2199988, z: 3.3000002}
+  m_LocalPosition: {x: 0, y: 0.9399986, z: 3.3000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5175,7 +5175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813973432}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 1.2199988, z: 3.3000002}
+  m_LocalPosition: {x: 0, y: 0.9399986, z: 3.3000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6760,6 +6760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JumpButton
       objectReference: {fileID: 0}
+    - target: {fileID: 6965290425791192471, guid: c9fb5d324d9b28948a42681ef3a3a2a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9fb5d324d9b28948a42681ef3a3a2a7, type: 3}
 --- !u!1001 &7688703416657187616
@@ -6791,7 +6795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5695958770149328844, guid: c2193e437c941b543b51153111c987dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.72
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 5695958770149328844, guid: c2193e437c941b543b51153111c987dd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6929,6 +6933,10 @@ PrefabInstance:
     - target: {fileID: 8982586288640548947, guid: 83d0a99e2ed8aaf49a898bdb3b3ff4b5, type: 3}
       propertyPath: m_Name
       value: Joystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982586288640548947, guid: 83d0a99e2ed8aaf49a898bdb3b3ff4b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d0a99e2ed8aaf49a898bdb3b3ff4b5, type: 3}
