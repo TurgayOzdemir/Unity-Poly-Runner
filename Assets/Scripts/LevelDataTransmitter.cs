@@ -35,4 +35,19 @@ public class LevelDataTransmitter : MonoBehaviour
     {
         return _playerDataTransmitter.GetCoinCount();
     }
+
+    public bool getHasKey()
+    {
+        return _playerDataTransmitter.GetHasKey();
+    }
+
+    public void Dancing()
+    {
+        _playerDataTransmitter.Dancing();
+    }
+
+    public void setHeartCount(int health)
+    {
+        _uiController.setHeartCount(health);
+    }
 }

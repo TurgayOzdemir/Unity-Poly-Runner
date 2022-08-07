@@ -11,12 +11,14 @@ public class PlayerCollisionController : MonoBehaviour
     public int CoinCount = 0;
     public int TotalCoinCount = 0;
 
-    private bool _hasKey = false;
+    public bool HasKey = false;
 
     private void Awake()
     {
         _levelDataTransmitter =gameManager.GetComponent<LevelDataTransmitter>();
     }
+
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,7 +31,7 @@ public class PlayerCollisionController : MonoBehaviour
 
         if (other.CompareTag("Key"))
         {
-            _hasKey = true;
+            HasKey = true;
             Destroy(other.gameObject);
         }
 
@@ -37,6 +39,7 @@ public class PlayerCollisionController : MonoBehaviour
         {
             _levelDataTransmitter.SetIsLevelCompleted(true);
         }
+
     }
 
 

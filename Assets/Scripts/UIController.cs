@@ -28,11 +28,20 @@ public class UIController : MonoBehaviour
     private Image _star2;
     private Image _star3;
 
+    [Header("Heart")]
+    [SerializeField] private GameObject heart1;
+    [SerializeField] private GameObject heart2;
+    [SerializeField] private GameObject heart3;
+
+    
+
 
     private PlayerDataTransmitter _playerDataTransmitter;
     private bool _pauseToggle = true;
 
     private Scene _activeScene;
+
+    private int _currentLevel;
 
     private void Awake()
     {
@@ -46,11 +55,15 @@ public class UIController : MonoBehaviour
     private void Start()
     {
         _activeScene = SceneManager.GetActiveScene();
+        _currentLevel = PlayerPrefs.GetInt("LEVEL", 1);
+
     }
 
     private void Update()
     {
         setTotalCoinCount();
+
+        _currentLevel = PlayerPrefs.GetInt("LEVEL");
     }
 
     private void setTotalCoinCount()
@@ -77,6 +90,16 @@ public class UIController : MonoBehaviour
         pauseButton.SetActive(false);
         StartCoroutine(starAnimation(starCount, beginningTime, givingStarTime));
 
+    }
+
+    public void setHeartCount(int health)
+    {
+        GameObject[] hearts = { heart1, heart2, heart3 };
+
+        for (int i = 0; i < hearts.Length - health; i++)
+        {
+            hearts[i].SetActive(false);
+        }
     }
 
     public void PauseButtonOnClick()
@@ -117,18 +140,24 @@ public class UIController : MonoBehaviour
 
     public void NextLevelButtonOnClick()
     {
-
+        PlayerPrefs.SetInt("LEVEL", _currentLevel + 1);
+        if (PlayerPrefs.GetInt("LEVEL") > 4)
+        {
+            PlayerPrefs.SetInt("LEVEL", 1);
+        }
+        string temp = "Level" + PlayerPrefs.GetInt("LEVEL").ToString();
+        SceneManager.LoadScene(temp);
     }
 
     public void RestartButtonOnClick()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void ExitButtonOnClick()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
 
 

@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 5695958770149328844}
   - component: {fileID: 6729881221079793010}
   - component: {fileID: 5558385251018140256}
+  - component: {fileID: 2086506040476349326}
   - component: {fileID: 3388489084396002677}
   - component: {fileID: 8938935311279424846}
   - component: {fileID: 1606071058010382164}
@@ -972,6 +973,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.46, z: 0}
+--- !u!114 &2086506040476349326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4920126510103649654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efdf385496b135742a92dc6b4942e455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3388489084396002677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -998,6 +1011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b5baba928c1b64aa59d4a57f3ad474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!114 &1606071058010382164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,7 +1052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79282c1cfceaf12429dfe42dcd81ecf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  CoinCount: 0
   TotalCoinCount: 0
+  HasKey: 0
 --- !u!95 &2699907736850910940
 Animator:
   serializedVersion: 4

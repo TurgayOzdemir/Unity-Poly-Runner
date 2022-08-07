@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PlayerDataTransmitter : MonoBehaviour
 {
+    [SerializeField] GameObject gameManager;
+
     private PlayerInputController _playerInputController;
     private PlayerMovementController _playerMovementController;
     private PlayerCollisionController _playerCollisionController;
+    private PlayerAnimationController _playerAnimationController;
+
+    private LevelDataTransmitter _levelDataTransmitter;
 
     private void Awake()
     {
         _playerInputController = GetComponent<PlayerInputController>();
         _playerMovementController = GetComponent<PlayerMovementController>();
         _playerCollisionController = GetComponent<PlayerCollisionController>();
+        _playerAnimationController = GetComponent<PlayerAnimationController>();
+        _levelDataTransmitter = gameManager.GetComponent<LevelDataTransmitter>();
     }
 
     public float GetPlayerHorizontalMovementAxis()
@@ -53,4 +60,27 @@ public class PlayerDataTransmitter : MonoBehaviour
     {
         return _playerCollisionController.CoinCount;
     }
+
+    public bool GetHasKey()
+    {
+        return _playerCollisionController.HasKey;
+    }
+
+    public void Dancing()
+    {
+        _playerAnimationController.Dancing();
+    }
+
+    public void Dying()
+    {
+        _playerAnimationController.Dying();
+    }
+
+    public void setHeartCount(int health)
+    {
+        _levelDataTransmitter.setHeartCount(health);
+    }
+
+
+
 }

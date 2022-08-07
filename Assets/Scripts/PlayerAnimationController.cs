@@ -32,4 +32,16 @@ public class PlayerAnimationController : MonoBehaviour
         }
     }
 
+    public void Dancing()
+    {
+        _animator.SetBool("isLevelCompleted", true);
+    }
+
+    public void Dying()
+    {
+        _animator.SetBool("isObstacle", true);
+
+    }
+
+
 }

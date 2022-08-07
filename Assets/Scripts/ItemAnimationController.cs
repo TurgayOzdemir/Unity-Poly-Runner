@@ -15,8 +15,27 @@ public class ItemAnimationController : MonoBehaviour
         }
     }
 
+    private IEnumerator HazardSawVerticalMove()
+    {
+        while (true){
+        transform.DOMoveZ(transform.position.z + 10, 1.25f);
+        yield return new WaitForSeconds(1.25f);
+        transform.DOMoveZ(transform.position.z - 10, 1.25f);
+        yield return new WaitForSeconds(1.25f);
+        }
+
+    }
+
     private void Start()
     {
-        StartCoroutine(upDown());
+        if (gameObject.CompareTag("Coin"))
+        {
+            StartCoroutine(upDown());
+        }
+        if (gameObject.CompareTag("Saw"))
+        {
+            StartCoroutine(HazardSawVerticalMove());
+        }
+        
     }
 }
